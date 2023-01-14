@@ -1,7 +1,8 @@
+#The array to be bubble sorted
 num_arr = [11, 13, 20, 2, 10, 14, 9, 3, 25, 30, 42, 18, 1, 6, 5, 16, 17, 8, 0, 7, 2]
 puts "Your beginning array before bubble sort is: #{num_arr}"
 
-# Check the first index of array to see if it's in the correct spot
+#Setup the variables
 i = 0
 pass = 0
 
@@ -10,8 +11,8 @@ swap_num = 1
 while swap_num == 1
   #Keep track of the number of passes, not to exceed the length of the array
   #i here represents the number of times the array[0] has been cycled through the array,
-  #when it equals the length of the array, move on and incrmenet the pass
-  if i + 1 == num_arr.length - pass
+  #when it equals the length of the array (we add 1 to it because the first slot in the array is 0), move on and incrmenet the pass
+  if i + 1 == num_arr.length
     pass += 1
     #Now that we are on a new pass, reset i to 0
     i = 0
@@ -25,6 +26,7 @@ while swap_num == 1
   #Check to see if the next pass will be our last, if so, set the flag to stop the loop after the next run,
   #then output the bubble sort array
   if pass + 1 == num_arr.length
+    #after the next run swap_num will no longer equal 1, stopping the loop
     swap_num = 2
     puts "Your ending array after bubble sort is: #{num_arr}"
   end
