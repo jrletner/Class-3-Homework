@@ -26,7 +26,7 @@ while unsorted == true
   #Check to see if the next pass will be our last, if so, set the flag to stop the loop after the next run,
   #then output the bubble sort array
   if pass + 1 == num_arr.length
-    #after the next run unsorted will no longer equal true, stopping the loop
+    #after the next run, unsorted will no longer equal true, stopping the loop
     unsorted = false
     puts "Your ending array after bubble sort is: #{num_arr}"
   end
