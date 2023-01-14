@@ -16,6 +16,7 @@ while unsorted == true
     #Now that we are on a new pass, reset i to 0
     i = 0
   end
+  #Compare the current number to the next number
   if num_arr[i] > num_arr[i + 1]
     #Swap the position if the current number is greater than the next number
     num_arr[i], num_arr[i + 1] = num_arr[i + 1], num_arr[i]
