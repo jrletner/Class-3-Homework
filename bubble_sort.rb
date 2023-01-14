@@ -6,9 +6,9 @@ puts "Your beginning array before bubble sort is: #{num_arr}"
 i = 0
 pass = 0
 
-swap_num = 1
+unsorted = true
 
-while swap_num == 1
+while unsorted == true
   #Keep track of the number of passes, not to exceed the length of the array
   #i here represents the number of times the array[0] has been cycled through the array,
   #when it equals the length of the array (we add 1 to it because the first slot in the array is 0), move on and incrmenet the pass
@@ -26,8 +26,8 @@ while swap_num == 1
   #Check to see if the next pass will be our last, if so, set the flag to stop the loop after the next run,
   #then output the bubble sort array
   if pass + 1 == num_arr.length
-    #after the next run swap_num will no longer equal 1, stopping the loop
-    swap_num = 2
+    #after the next run unsorted will no longer equal true, stopping the loop
+    unsorted = false
     puts "Your ending array after bubble sort is: #{num_arr}"
   end
 end
