@@ -5,7 +5,6 @@ puts "Your beginning array before bubble sort is: #{num_arr}"
 #Setup the variables
 i = 0
 pass = 0
-
 unsorted = true
 
 while unsorted == true
